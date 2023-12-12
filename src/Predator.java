@@ -11,5 +11,9 @@ public class Predator extends Creature {
     public void attackHerbivore() {
 
     }
+    @Override
+    public String toString() {
+        return Emoji.WOLF.getSymbol();
+    }
 
 }

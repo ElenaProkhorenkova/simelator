@@ -11,4 +11,8 @@ public class Herbivore extends Creature{
     public void eatGrass() {
 
     }
+    @Override
+    public String toString() {
+        return Emoji.RABBIT.getSymbol();
+    }
 }
