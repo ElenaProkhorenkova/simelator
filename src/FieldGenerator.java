@@ -1,9 +1,9 @@
 public class FieldGenerator {
-    static int herbCounter = 15;
-    static int predCounter = 10;
-    static int treeCounter = 15;
-    static int rockCounter = 12;
-    static int grassCounter = 15;
+    static int herbCounter = 10;
+    static int predCounter = 8;
+    static int treeCounter = 5;
+    static int rockCounter = 7;
+    static int grassCounter = 12;
 
     public static Point generatePoint() {
         int x = (int) (Math.random() * 10);

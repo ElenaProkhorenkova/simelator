@@ -11,6 +11,7 @@ public class Simulation implements Actions{
     //запустить бесконечный цикл симуляции и рендеринга
     public void startSimulation(){
 
+
     }
 
     //приостановить бесконечный цикл симуляции и рендеринга

@@ -1,6 +1,10 @@
+import java.util.Objects;
+
 public class Point {
-    int x;
-    int y;
+
+
+    private int x;
+    private int y;
 
     public Point(int x, int y) {
         this.x = x;
@@ -16,11 +20,31 @@ public class Point {
         return y;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
 
     @Override
     public String toString() {
         return "Координаты: " +
                 "x=" + x +
                 ", y=" + y;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Point point = (Point) o;
+        return x == point.x && y == point.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 }
